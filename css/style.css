@@ -1,20 +1,40 @@
 body{
     background-color: black;
+    text-align: center;
 }
-header , section , article{
-    margin-left: 35%;
+/* NavBar */
+ul{
+    background-color: teal;
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 20px;
 }
+li a{
+    color: aquamarine;
+    padding: 15px;
+    display: inline-block;
+    font-size: 20px;
+}
+li a:hover{
+    color: aliceblue;
+}
+ul li{
+    display: inline;
+}
+/* NavBar */
 h1{
     color: white;
     font-size: 30px;
-}
-a{
-    text-decoration: none;
-    color: chartreuse;
+    font-family: Iransans;
+    text-align: center;
 }
 li{
     color: chartreuse;
     font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: chartreuse;
 }
 abbr{
     color: aqua;
@@ -25,9 +45,12 @@ table{
     font-size: 20px;
 }
 p{
-    font-size: 20px;
+    font-size: 22px;
     color: aquamarine;
-    width: 450px;
+    width: 300px;
+    text-align: justify;
+    line-height: 1.2;
+    font-family: B koodak;
 }
 address{
     color: violet;
@@ -43,3 +66,7 @@ video{
 .zznaghe-cover{
     border-radius: 30px;
 }
+ol{
+    list-style-position: inside;
+    line-height: 1.5;
+  }

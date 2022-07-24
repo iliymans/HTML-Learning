@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+/* NavBar */
+ul {
+  background-color: teal;
+  border-radius: 5px;
+  margin: 0;
+  padding-left: 20px;
+}
+li a {
+  color: aquamarine;
+  padding: 15px;
+  display: inline-block;
+  font-size: 20px;
+}
+li a:hover {
+  color: aliceblue;
+}
+ul li {
+  display: inline;
+}
+/* NavBar */
+main {
+  direction: rtl;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-family: Iransans;
+}
+a {
+  text-decoration: none;
+  color: chartreuse;
+}
+p {
+  font-size: 22px;
+  color: aquamarine;
+  width: 300px;
+  text-align: justify;
+  line-height: 1.2;
+  font-family: B koodak;
+}
