@@ -1,16 +1,17 @@
 body {
-  background-color: black;
+  background-color: #fbb400;
   text-align: center;
-}
-/* NavBar */
+}/* NavBar */
 ul {
-  background-color: teal;
+  background-color: #808080;
   border-radius: 5px;
-  margin: 0;
-  padding-left: 20px;
+  text-align: center;
+  width: 40%;
+  padding: 0;
+  display: inline-block;
 }
 li a {
-  color: aquamarine;
+  color: #fff;
   padding: 15px;
   display: inline-block;
   font-size: 20px;
@@ -21,12 +22,13 @@ li a:hover {
 ul li {
   display: inline;
 }
-/* NavBar */
+/* -NavBar */
+
 main {
   direction: rtl;
 }
 h1 {
-  color: white;
+  color: #000000;
   font-size: 30px;
   text-align: center;
   font-family: Iransans;
@@ -37,9 +39,18 @@ a {
 }
 p {
   font-size: 22px;
-  color: aquamarine;
+  color: #fff;
   width: 300px;
   text-align: justify;
   line-height: 1.2;
   font-family: B koodak;
+}
+hr {
+  height: 5px;
+  border-radius: 100px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #a4a4a4;
+  text-decoration: none;
 }
