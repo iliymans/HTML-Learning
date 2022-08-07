@@ -1,38 +1,4 @@
-body {
-  background-color: #fbb400;
-  text-align: center;
-}
-/* NavBar */
-ul {
-  background-color: #808080;
-  border-radius: 5px;
-  text-align: center;
-  width: 40%;
-  padding: 0;
-  display: inline-block;
-}
-li a {
-  color: #fff;
-  padding: 15px;
-  display: inline-block;
-  font-size: 20px;
-}
-li a:hover {
-  color: aliceblue;
-}
-ul li {
-  display: inline;
-}
-/* -NavBar */
-h1 {
-  color: #000000;
-  font-size: 30px;
-  font-family: Iransans;
-  text-align: center;
-}
-a {
-  text-decoration: none;
-}
+@import url(style.css);
 form {
   border: #000000 solid 1px;
   border-radius: 10px;
