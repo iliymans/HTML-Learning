@@ -1,0 +1,18 @@
+@import url(style.css);
+.div-group {
+  width: 200px;
+  padding: 30px;
+  background-color: black;
+  margin: 15px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.a-group {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: cursive;
+}
+.a-group:hover .div-group {
+  background-color: rgb(24, 24, 24);
+}

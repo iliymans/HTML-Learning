@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   text-align: center;
   background-color: #fbb400;
+  width: 650px;
+  margin: auto;
 }
 a {
   text-decoration: none;
@@ -19,24 +25,33 @@ h1 {
   font-size: 30px;
   font-family: Iransans;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 li {
   font-size: 20px;
 }
+section {
+  margin: 40px 0 40px 0;
+}
+img , iframe , form{
+  user-select: none;
+}
 /* NavBar */
 ul {
+  user-select: none;
   background-color: #808080;
   border-radius: 5px;
   text-align: center;
-  width: 40%;
+  width: 100%;
   padding: 0;
-  display: inline-block;
+  margin: 10px 0 0 0;
 }
 li a {
   color: #fff;
-  padding: 15px;
+  padding: 15px 20px 15px 20px;
   display: inline-block;
   font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 li a:hover {
   color: aliceblue;
