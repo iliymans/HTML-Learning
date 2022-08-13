@@ -33,30 +33,33 @@ li {
 section {
   margin: 40px 0 40px 0;
 }
-img , iframe , form{
+img,
+iframe,
+form {
   user-select: none;
 }
 /* NavBar */
-ul {
-  user-select: none;
+nav {
+  position: sticky;
   background-color: #808080;
+  user-select: none;
   border-radius: 5px;
   text-align: center;
-  width: 100%;
-  padding: 0;
-  margin: 10px 0 0 0;
+  top: 0;
+  margin: 20px 0 0 0;
 }
 li a {
   color: #fff;
   padding: 15px 20px 15px 20px;
   display: inline-block;
   font-size: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 li a:hover {
-  color: aliceblue;
+  color: rgb(241, 230, 230);
 }
-ul li {
-  display: inline;
+nav ul li {
+  display: inline-block;
 }
 /* -NavBar */
