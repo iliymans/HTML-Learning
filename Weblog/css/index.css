@@ -1,9 +1,11 @@
+/* @iliya_mansouri_018 */
 /* General Setting */
 * {
   padding: 0;
   margin: 0;
   font-family: iransans;
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   width: 1200px;
@@ -12,62 +14,90 @@ body {
   direction: rtl;
   background-color: whitesmoke;
 }
+a{
+  text-decoration: none;
+}
 .clear {
   clear: both;
 }
+
+
+/* @iliya_mansouri_018 */
 /* Header */
-.icon {
+header {
+  position: relative;
+}
+header .icon {
   width: 100px;
   border-radius: 100%;
   margin-bottom: 10px;
 }
-.info {
+header .info {
   display: inline-block;
-  bottom: 40px;
+  bottom: 50px;
   position: relative;
   margin: 10px;
 }
-.info h1 {
+header .info h1 {
   font-size: 20px;
   margin-bottom: 5px;
 }
-.info p {
-  font-size: 12px;
+header .info h3 {
+  font-size: 15px;
+  font-weight: 400;
 }
-.info2 {
-  margin: 10px;
+header .info2 {
+  position: absolute;
+  left: 0;
+  top: 40px;
 }
-.btn {
-  background-color: blue;
+header .info2 .same {
   color: white;
-  padding: 8px 15px 8px 15px;
+  padding: 8px 15px;
   border-radius: 3px;
   border: none;
+  font-size: 14px;
 }
-.btn2 {
-  background-color: green;
-  color: white;
-  padding: 8px 15px 8px 15px;
-  border-radius: 3px;
-  border: none;
+header .info2 .btn {
+  background-color: rgb(60, 60, 253);
 }
+header .info2 .btn2 {
+  background-color: rgb(24, 163, 24);
+}
+header .info2 .btn:hover{
+  background-color: rgb(0, 0, 255);
+}
+header .info2 .btn2:hover{
+  background-color: rgb(1, 139, 1);
+}
+
+
+/* @iliya_mansouri_018 */
 /* NavBar */
 nav {
-  padding: 15px 0 15px 0;
   background-color: rgb(40, 59, 59);
   direction: rtl;
   margin-bottom: 20px;
+  border-radius: 3px;
 }
 nav ul li {
   display: inline;
 }
-a {
+nav ul li a {
   text-decoration: none;
-  padding: 20px;
-  font-size: 15px;
+  padding: 12px 15px;
+  font-size: 18px;
   color: white;
   font-family: Iransans;
+  display: inline-block;
+  transition: 0.15s;
 }
+nav ul li a:hover{
+  background-color: rgb(79, 87, 87);
+}
+
+
+/* @iliya_mansouri_018 */
 /* Content */
 main {
   float: right;
@@ -122,6 +152,9 @@ button.btn3 {
   border-radius: 3px;
   padding: 5px;
 }
+
+
+/* @iliya_mansouri_018 */
 /* Sidebar */
 aside {
   float: left;
@@ -175,15 +208,20 @@ input {
   margin: 15px auto 5px auto;
   display: block;
 }
+
+
+/* @iliya_mansouri_018 */
 /* Footer */
-footer{
+footer {
   background-color: rgb(40, 59, 59);
   padding: 10px;
 }
-footer p{
+footer p {
   color: white;
   text-align: center;
 }
-footer .diff{
+footer .diff {
   direction: ltr;
 }
+
+/* @iliya_mansouri_018 */
