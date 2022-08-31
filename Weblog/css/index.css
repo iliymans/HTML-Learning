@@ -14,12 +14,17 @@ body {
   direction: rtl;
   background-color: whitesmoke;
 }
-a{
+a {
   text-decoration: none;
+  cursor: pointer;
 }
 .clear {
   clear: both;
 }
+ul{
+  list-style-type: none;
+}
+
 
 
 /* @iliya_mansouri_018 */
@@ -64,12 +69,13 @@ header .info2 .btn {
 header .info2 .btn2 {
   background-color: rgb(24, 163, 24);
 }
-header .info2 .btn:hover{
+header .info2 .btn:hover {
   background-color: rgb(0, 0, 255);
 }
-header .info2 .btn2:hover{
+header .info2 .btn2:hover {
   background-color: rgb(1, 139, 1);
 }
+
 
 
 /* @iliya_mansouri_018 */
@@ -92,9 +98,10 @@ nav ul li a {
   display: inline-block;
   transition: 0.15s;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: rgb(79, 87, 87);
 }
+
 
 
 /* @iliya_mansouri_018 */
@@ -104,9 +111,8 @@ main {
   width: 850px;
 }
 section {
-  width: 850px;
   background-color: white;
-  border: 1px solid silver;
+  border: 1px solid #ccc;
   border-radius: 3px;
   margin-bottom: 30px;
   position: relative;
@@ -115,42 +121,41 @@ section {
   top: 0;
 }
 section h1 {
-  padding: 10px;
-  border-bottom: 3px dashed silver;
-  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 2px dashed #ccc;
 }
-section p {
-  padding: 5px 15px;
-  width: 600px;
-  display: inline-block;
-  text-align: justify;
-  font-size: 14px;
-  position: relative;
-  bottom: 30px;
+section p{
+  padding: 5px ;
 }
-section img {
-  margin-right: 10px;
+section .img-div{
+  float: right;
+  margin: 10px;
 }
-.read {
+section .img-div img {
+  border: 1px solid #ccc;
+}
+section .info {
   background-color: whitesmoke;
-  border-top: 1px solid silver;
-  padding: 5px 10px;
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+  padding: 5px;
 }
-.read p {
-  display: inline-block;
-  width: 500px;
-  position: relative;
-  top: 0px;
-  font-size: 14px;
+section .info span {
+  font-size: 15px;
   color: #333;
+  text-align: right;
 }
-button.btn3 {
+section .info .btn {
   float: left;
+  font-size: 12px;
   background-color: #333;
   color: white;
   border: none;
   border-radius: 3px;
-  padding: 5px;
+  padding: 5px 8px;
+}
+section .info .btn:hover{
+  background-color: black;
 }
 
 
@@ -160,56 +165,67 @@ aside {
   float: left;
   width: 300px;
 }
-article {
-  width: 100%;
+aside .sidebar-item {
   background-color: white;
-  border: 1px solid silver;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
   margin-bottom: 20px;
 }
-.heading {
+aside .sidebar-item .sidebar-heading {
   background-color: #333;
   padding: 5px;
   border-radius: 3px 3px 0 0;
 }
-.heading h1 {
+aside .sidebar-item .sidebar-heading h1 {
   color: white;
   font-size: 15px;
   text-align: center;
 }
-.content {
+aside .sidebar-item .sidebar-content {
   padding: 10px;
   border: none;
 }
-.content ul {
-  padding-right: 20px;
+aside .categories .sidebar-content ul li a {
+  color: black;
+  border-right: 2.5px solid black;
+  margin-top: 10px;
+  display: inline-block;
+  padding-right: 5px;
   font-size: 14px;
+  font-weight: 500;
+  transition:  0.25s;
 }
-.content p {
+aside .categories .sidebar-content ul li a:hover{
+  border-right: 3.5px solid black;
+  margin-right: 5px;
+}
+aside .newsletter{
+  text-align: center;
+}
+aside .newsletter .sidebar-content p {
   font-size: 13px;
   text-align: center;
-  width: 70%;
   margin: 0 auto 5px auto;
   font-weight: bold;
 }
-input {
+aside .newsletter .sidebar-content .email {
   width: 90%;
-  text-align: center;
-  margin: auto;
-  display: block;
+  margin-top: 5px;
 }
-.content button {
+aside .newsletter .sidebar-content .submit {
   background-color: green;
   padding: 5px 12px;
   color: white;
   border-radius: 3px;
   border: none;
   text-align: center;
-  margin: 15px auto 5px auto;
-  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
-
-
+aside .newsletter .sidebar-content .submit:hover{
+  background-color: rgb(2, 83, 2);
+}
 /* @iliya_mansouri_018 */
 /* Footer */
 footer {
