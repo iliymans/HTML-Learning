@@ -1,7 +1,9 @@
 @import url(/RapFarsi/css/style.css);
-
 /* @iliya_mansouri_018 */
 /* Content */
+article{
+  margin: 20px 0 100px 0;
+}
 td,
 th {
   border: 1px black solid;
@@ -47,4 +49,16 @@ h1 {
 }
 .mydiv3:hover {
   opacity: 0.3;
+}
+.mydiv4{
+  background-color: black;
+  margin: auto;
+  width: 200px;
+  height: 100px;
+  box-shadow: 15px 15px white , 30px 30px #ccc;
+}
+article .txt-shadow{
+  font-size: 40px;
+  color: black;
+  text-shadow: 3px 3px white , 5px 5px #ccc , 7px 7px red;
 }
