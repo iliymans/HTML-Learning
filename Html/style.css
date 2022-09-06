@@ -62,3 +62,9 @@ article .txt-shadow{
   color: black;
   text-shadow: 3px 3px white , 5px 5px #ccc , 7px 7px red;
 }
+article .gradient{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: linear-gradient(120deg , red  , blue );
+}
