@@ -1,4 +1,3 @@
 # mine
-@iliymans
-HTML learning process
-host : https://iliya-mansouri-018.github.io/HTML-Learning/
+@iliymans  ---  http://instagram.com/iliymans  ---  https://t.me/iliymans   ---   
+Site URL : https://iliymans.github.io/HTML-Learning/
