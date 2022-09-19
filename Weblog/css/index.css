@@ -1,9 +1,10 @@
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* General Setting */
+@import url(/Weblog/Font/style.css);
 * {
   padding: 0;
   margin: 0;
-  font-family: iransans;
+  font-family: IRANSans;
   box-sizing: border-box;
   user-select: none;
 }
@@ -21,13 +22,11 @@ a {
 .clear {
   clear: both;
 }
-ul{
+ul {
   list-style-type: none;
 }
 
-
-
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* Header */
 header {
   position: relative;
@@ -76,9 +75,7 @@ header .info2 .btn2:hover {
   background-color: rgb(1, 139, 1);
 }
 
-
-
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* NavBar */
 nav {
   background-color: rgb(40, 59, 59);
@@ -91,20 +88,19 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  padding: 12px 15px;
+  padding: 10px 15px;
   font-size: 18px;
   color: white;
-  font-family: Iransans;
+  font-family: IRANSans;
   display: inline-block;
   transition: 0.15s;
+  margin: 0;
 }
 nav ul li a:hover {
   background-color: rgb(79, 87, 87);
 }
 
-
-
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* Content */
 main {
   float: right;
@@ -124,10 +120,10 @@ section h1 {
   padding: 15px;
   border-bottom: 2px dashed #ccc;
 }
-section p{
-  padding: 5px ;
+section p {
+  padding: 5px;
 }
-section .img-div{
+section .img-div {
   float: right;
   margin: 10px;
 }
@@ -138,10 +134,10 @@ section .info {
   background-color: whitesmoke;
   border-top: 1px solid #ccc;
   margin-top: 25px;
-  padding: 5px;
+  padding: 8px;
 }
 section .info span {
-  font-size: 15px;
+  font-size: 14px;
   color: #333;
   text-align: right;
 }
@@ -154,12 +150,11 @@ section .info .btn {
   border-radius: 3px;
   padding: 5px 8px;
 }
-section .info .btn:hover{
+section .info .btn:hover {
   background-color: black;
 }
 
-
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* Sidebar */
 aside {
   float: left;
@@ -193,13 +188,13 @@ aside .categories .sidebar-content ul li a {
   padding-right: 5px;
   font-size: 14px;
   font-weight: 500;
-  transition:  0.25s;
+  transition: 0.25s;
 }
-aside .categories .sidebar-content ul li a:hover{
+aside .categories .sidebar-content ul li a:hover {
   border-right: 3.5px solid black;
   margin-right: 5px;
 }
-aside .newsletter{
+aside .newsletter {
   text-align: center;
 }
 aside .newsletter .sidebar-content p {
@@ -223,10 +218,10 @@ aside .newsletter .sidebar-content .submit {
   font-size: 14px;
   cursor: pointer;
 }
-aside .newsletter .sidebar-content .submit:hover{
+aside .newsletter .sidebar-content .submit:hover {
   background-color: rgb(2, 83, 2);
 }
-/* @iliya_mansouri_018 */
+/* @iliymans */
 /* Footer */
 footer {
   background-color: rgb(40, 59, 59);
@@ -240,4 +235,4 @@ footer .diff {
   direction: ltr;
 }
 
-/* @iliya_mansouri_018 */
+/* @iliymans */
