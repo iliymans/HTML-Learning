@@ -177,21 +177,20 @@ aside .sidebar-item .sidebar-heading h1 {
   text-align: center;
 }
 aside .sidebar-item .sidebar-content {
-  padding: 10px;
+  padding: 15px;
   border: none;
 }
 aside .categories .sidebar-content ul li a {
   color: black;
-  border-right: 2.5px solid black;
+  border-right: 2.7px solid black;
   margin-top: 10px;
   display: inline-block;
   padding-right: 5px;
   font-size: 14px;
-  font-weight: 500;
   transition: 0.25s;
 }
 aside .categories .sidebar-content ul li a:hover {
-  border-right: 3.5px solid black;
+  border-right: 3.7px solid black;
   margin-right: 5px;
 }
 aside .newsletter {
@@ -201,7 +200,6 @@ aside .newsletter .sidebar-content p {
   font-size: 13px;
   text-align: center;
   margin: 0 auto 5px auto;
-  font-weight: bold;
 }
 aside .newsletter .sidebar-content .email {
   width: 90%;
