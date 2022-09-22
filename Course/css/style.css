@@ -1,0 +1,106 @@
+/* General Setting */
+@import url(/Weblog/Font/style.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IRANSans-web";
+  direction: rtl;
+}
+body {
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* Header */
+header {
+  background: linear-gradient(
+    195deg,
+    rgba(13, 71, 161, 1) 0%,
+    rgba(30, 136, 229, 1) 100%
+  );
+  height: 700px;
+}
+/* Navbar */
+header nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+header nav #icon {
+  width: 80px;
+  border-radius: 100%;
+  display: inline;
+}
+header nav ul {
+  float: left;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.25s;
+}
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+  transition: 0.25s;
+}
+
+/* Header Content */
+header #header-con #tit-header {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  font-size: 56px;
+}
+header #header-con #txt-header {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+}
+header #header-con form {
+  text-align: center;
+  margin-top: 20px;
+}
+header #header-con form #email {
+  border-radius: 5px;
+  padding: 14px;
+  width: 400px;
+  border: none;
+  margin-left: 10px;
+}
+header #header-con form #submit {
+  color: white;
+  background-color: #333;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 5px;
+}
+header #header-con form #submit:hover {
+  cursor: pointer;
+
+  -webkit-box-shadow: 5px 5px 25px 3px rgba(51, 51, 51, 0.41);
+  box-shadow: 5px 5px 25px 3px rgba(51, 51, 51, 0.41);
+}
+header #header-con span {
+  margin-top: 30px;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+header #header-img{
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+}
+
