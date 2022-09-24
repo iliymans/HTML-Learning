@@ -6,15 +6,17 @@
   box-sizing: border-box;
   font-family: "IRANSans-web";
   direction: rtl;
+  user-select: none;
 }
 body {
-  background-color: white;
+  background-color: #ffffff;
 }
 a {
   text-decoration: none;
 }
-
-
+section {
+  margin: 50px 0;
+}
 /* Header */
 header {
   background: linear-gradient(
@@ -44,8 +46,8 @@ header nav ul li {
 header nav ul li a {
   color: white;
   display: inline-block;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 10px 18px;
+  font-size: 18px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: 0.25s;
 }
@@ -98,9 +100,57 @@ header #header-con span {
   text-align: center;
   font-size: 14px;
 }
-header #header-img{
-    margin: auto;
-    display: block;
-    margin-top: 40px;
+header #header-img {
+  margin: auto;
+  display: block;
+  margin-top: 40px;
+}
+
+/* Content */
+main {
+  margin-top: 250px;
+}
+main #mini-divs {
+  width: 1100px;
+  margin: auto;
+}
+main #mini-divs div {
+  display: inline-block;
+  margin: 15px;
+  padding: 20px;
+  width: 30%;
+  height: 200px;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: -7px 7px 14px #c2c2c2, 7px -7px 14px #ffffff;
+}
+main #mini-divs div i {
+  color: rgba(13, 71, 161, 1);
+}
+main #mini-divs div h1 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+main #mini-divs div p {
+  font-size: 14px;
+}
+
+main #back-img {
+  background-image: url(/Course/img/beach_cloud_dawn_horizon_horizontal_landscape_ocean_601821.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+}
+main #back-img h1 {
+  font-size: 38px;
+  color: black;
+  margin-bottom: 20px;
+}
+main #back-img ul li {
+  display: inline;
+  margin: 10px 20px;
 }
 
