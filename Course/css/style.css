@@ -1,10 +1,10 @@
 /* General Setting */
-@import url(/Weblog/Font/style.css);
+@import url(/Font/style.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "IRANSans-web";
+  font-family: IRANSans-web;
   direction: rtl;
   user-select: none;
 }
