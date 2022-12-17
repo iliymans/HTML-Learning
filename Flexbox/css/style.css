@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+}
+section{
+  margin: 100px 10px;
+}
+h1{
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  background-color: springgreen;
+  border: 5px solid darkblue;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  margin-bottom: 50px;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.box {
+  background-color: crimson;
+  border: 1px solid black;
+  width: 30%;
+  height: 40%;
+}
+.container1 {
+  background-color: springgreen;
+  border: 5px solid darkblue;
+  width: 300px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.box1 {
+  background-color: crimson;
+  border: 1px solid black;
+  height: 200px;
+  width: 40%;
+}
+.container2 {
+  margin: 8px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box2 {
+  width: 30%;
+  margin: 10px;
+  height: 100px;
+  border: none;
+  background-color: brown;
+  border-radius: 5px;
+}
+.container3 {
+  margin: 10px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 500px;
+}
+.box3 {
+  background-color: blueviolet;
+  height: 20%;
+}
+.one {
+  width: 150px;
+}
+.two {
+  width: 20px;
+}
+.tree {
+    width: 110px;
+}
+.four {
+    width: 200px;
+}
+.container4{
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin: 5px;
+  height: 500px;
+}
+.box4{
+  flex-basis: 150px;
+  height: 150px;
+  background-color: yellowgreen;
+}
+.two1{
+  align-self: flex-start;
+}

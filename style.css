@@ -1,4 +1,4 @@
-@import url(Weblog/Font/style.css);
+@import url();
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +7,6 @@
   user-select: none;
 }
 body {
-  width: 100%;
-  direction: rtl;
   background-color: rgb(227, 230, 235);
 }
 a {
@@ -17,23 +15,19 @@ a {
 
 /* Header */
 header {
+  width: 100%;
   background-color: #0084ff;
   padding: 15px;
-  height: 300px;
 }
-header .header {
-  direction: ltr;
-  float: left;
-  width: 400px;
-  margin-left: 50px;
+header .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 header .header .logo {
-  direction: ltr;
   border-radius: 100%;
-  display: inline-block;
 }
 header .header h1 {
-  direction: ltr;
   color: white;
   position: relative;
   bottom: 50px;
@@ -41,40 +35,10 @@ header .header h1 {
   display: inline;
   font-family: "Times New Roman", Times, serif;
 }
-.links {
-  display: inline-block;
-  margin-right: 39%;
-  margin-top: 50px;
+header nav {
+  margin-top: 10px;
 }
-.links a {
-  width: 80px;
-  height: 80px;
-  margin: 10px;
-  border-radius: 10px;
-  background: #0084ff;
-  box-shadow: 20px 20px 60px #0070d9, -20px -20px 60px #0098ff;
-  display: inline-block;
-}
-.links a div .cls {
-  color: white;
-  position: relative;
-  left: 13px;
-}
-.links a:hover{
-  box-shadow: none;
-  background-color: white;
-}
-.links a:hover .cls{
-  color: #0070d9;
-}
-/* NavBar */
-nav {
-  width: 700px;
-  float: right;
-  margin-top: 30px;
-  margin-right: 100px;
-}
-li {
+header nav ul li {
   display: inline;
 }
 a {
@@ -82,7 +46,6 @@ a {
   color: white;
   display: inline-block;
   font-size: 20px;
-  display: inline-block;
   background: linear-gradient(currentColor 0 0) 100% 100% / var(--d, 0) 3px
     no-repeat;
   transition: 0.3s;
@@ -90,11 +53,42 @@ a {
 nav ul li a:hover {
   --d: 100%;
 }
+.links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.links a {
+  width: 80px;
+  margin: 10px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 10px;
+  background: #0084ff;
+  box-shadow: -5px 5px 16px #0062bd, 5px -5px 16px #00a6ff;
+  transition: 0.3s;
+}
+.links a i {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+.links a:hover {
+  box-shadow: none;
+  background-color: white;
+}
+.links a:hover i {
+  color: #0070d9;
+}
 
 /* Content */
 section {
   text-align: center;
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 section .projects {
   padding: 0;
@@ -102,14 +96,38 @@ section .projects {
   background-color: #333;
   color: white;
   transition: 0.25s;
-  margin: 5px;
+  margin: 8px;
 }
-section .projects img{
-  /* width: 400px; */
-}
-section .projects h1{
+section .projects h1 {
   padding: 10px 0;
 }
 section .projects:hover {
   background-color: rgb(75, 75, 75);
+}
+
+
+@media only screen and (max-width:1020px){
+  a{
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  h1{
+    font-size: 24px;
+  }
+  header .header .logo {
+    margin-left: 35px;
+  }
+  header .header h1 {
+    bottom: 0;
+    display: block;
+  }
+}
+@media only screen and (max-width:558px){
+  header nav ul li{
+    display: block;
+  }
+  header nav{
+    width: 100%;
+    text-align: center;
+  }
 }
