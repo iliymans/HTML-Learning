@@ -83,12 +83,17 @@ nav ul li a:hover {
 }
 
 /* Content */
+main{
+  max-width: 1200px;
+  margin: auto;
+}
 section {
   text-align: center;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 section .projects {
   padding: 0;
@@ -120,6 +125,18 @@ section .projects:hover {
   header .header h1 {
     bottom: 0;
     display: block;
+  }
+}
+@media only screen and (max-width:750px){
+  section{
+    width: 100%;
+  }
+  section a{
+    width: 300px;
+  }
+  section a img{
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (max-width:558px){
