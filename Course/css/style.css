@@ -40,7 +40,7 @@ header #container nav {
   padding: 10px 0 0 0;
 }
 header #container nav #icon {
-  width: 80px;
+  width: 90px;
   border-radius: 100%;
 }
 header #container nav ul {
@@ -261,7 +261,7 @@ footer p b {
   }
 }
 @media only screen and (max-width: 880px) {
-  main{
+  main {
     margin-top: 25%;
   }
   main #back-img {
@@ -304,6 +304,9 @@ footer p b {
   }
 }
 @media only screen and (max-width: 660px) {
+  main {
+    margin-top: 30%;
+  }
   main #back-img {
     height: 300px;
   }
@@ -331,7 +334,7 @@ footer p b {
   }
 }
 @media only screen and (max-width: 550px) {
-  header{
+  header {
     height: 900px;
   }
   main #back-img {
@@ -348,28 +351,31 @@ footer p b {
     margin: 10px;
   }
   header #container #header-con #tit-header {
-    font-size: 36px;
+    font-size: 26px;
   }
   header #container nav #icon {
-    width: 150px;
+    width: 120px;
   }
-  header #container nav ul{
+  header #container nav ul {
     text-align: center;
     width: 100%;
   }
-  header #container nav ul li{
+  header #container nav ul li {
     display: block;
   }
   header #container nav ul li a {
-    font-size: 22px;
+    font-size: 18px;
   }
   header #container #header-con #txt-header {
     font-size: 16px;
   }
-  main #back-img ul li a img{
+  main #back-img ul li a img {
     width: 150px;
   }
   main #back-img ul li {
     width: 150px;
+  }
+  header #container #header-con form #submit{
+    margin-top: 10px;
   }
 }
