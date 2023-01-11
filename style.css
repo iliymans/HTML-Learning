@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: IRANSans-web;
-  user-select: none;
 }
 body {
   background-color: rgb(227, 230, 235);
@@ -12,7 +11,21 @@ body {
 a {
   text-decoration: none;
 }
-
+img , i {
+  user-select: none;
+}
+div h1::selection{
+  background: white;
+  color: #0084ff;
+}
+a::selection{
+  background: white;
+  color: #0084ff;
+}
+a h1::selection{
+  background: white;
+  color: #333;
+}
 /* Header */
 header {
   width: 100%;
@@ -26,6 +39,10 @@ header .header-container {
 }
 header .header .logo {
   border-radius: 100%;
+  opacity: 0.7;
+}
+header .header:hover .logo{
+  opacity: 1;
 }
 header .header h1 {
   color: white;

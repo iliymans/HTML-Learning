@@ -1,4 +1,6 @@
-let Name = "Iliya";
-let FamilyName = "Mansouri";
-let Age = 16;
-alert(Name + " " + FamilyName + " " + Age);
+let name = "Iliya";
+let familyName = "Mansouri";
+let age = 16;
+let profilePicture = false;
+
+alert(name + " " + familyName + " " + age + " " + "Profile Picture :" + profilePicture);
