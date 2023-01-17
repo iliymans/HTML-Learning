@@ -1,5 +1,4 @@
-function iliya(userName) {
+function iliya() {
+  let userName = prompt("Whats your name?");
   alert("Hello " + userName);
 }
-let userName = prompt("Whats your name?");
-iliya(userName);
