@@ -15,8 +15,17 @@ result = text.toUpperCase();
 result = text.toLowerCase();
 
 // indexof
-result = text.indexOf("Iliya")
+result = text.indexOf("Iliya");
 
 // includes
-result = text.includes("iliymans")
-alert(result);
+result = text.includes("iliymans");
+
+// substring
+result = text.substring(2, 17);
+
+// split
+result = text.split(" ")
+
+// replace
+result = text.replace("Iliya Mansouri","iliymans")
+console.log(result);
