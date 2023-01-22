@@ -10,22 +10,30 @@
 </head>
 
 <body>
-    <button onclick="iliya()">Click Me</button>
+    <input type="text" name="text" id="text">
+    <button onclick="addLiTag()">add to ul</button>
+    <ul></ul>
+
+    <script>
+        function addLiTag() {
+            let liText = document.querySelector("input").value;
+            let liTag = document.createElement("li");
+            liTag.innerHTML = liText;
+            document.querySelector("ul").appendChild(liTag);
+        }
+    </script>
+    <!-- <button onclick="iliya()">Click Me</button>
     <h1 id="text">Hello User , Click on button</h1>
-    <p>Hello</p>
-    <p>Hi</p>
-    <p>Hey</p>
-    <hr>
 
     <script>
         function iliya() {
             let userName = prompt("What's your name??");
             document.getElementById("text").innerHTML = "Welcome " + userName;
         }
-        let pTag = document.createElement("div");
+        let pTag = document.createElement("p");
         pTag.innerHTML = "P tag created by JS";
-        console.log(pTag);
-    </script>
+        document.querySelector("body").appendChild(pTag);
+    </script> -->
 </body>
 
 </html>
