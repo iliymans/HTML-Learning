@@ -11,16 +11,17 @@
 
 <body>
     <input type="text" name="text" id="text">
-    <button onclick="addLiTag()">add to ul</button>
+    <button>add to ul</button>
     <ul></ul>
 
     <script>
-        function addLiTag() {
+        let btn = document.querySelector("button");
+        btn.addEventListener("click", function () {
             let liText = document.querySelector("input").value;
             let liTag = document.createElement("li");
             liTag.innerHTML = liText;
             document.querySelector("ul").appendChild(liTag);
-        }
+        });
     </script>
     <!-- <button onclick="iliya()">Click Me</button>
     <h1 id="text">Hello User , Click on button</h1>
