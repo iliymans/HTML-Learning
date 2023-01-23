@@ -24,8 +24,8 @@ result = text.includes("iliymans");
 result = text.substring(2, 17);
 
 // split
-result = text.split(" ")
+result = text.split(" ");
 
 // replace
-result = text.replace("Iliya Mansouri","iliymans")
+result = text.replace("Iliya Mansouri", "iliymans");
 console.log(result);
