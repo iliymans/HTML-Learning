@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My ToDo App</title>
+</head>
+
+<body>
+    <header>
+        <form action="#">
+            <h1>My ToDo App</h1>
+            <p>Remmember what you need to do ...</p>
+            <input type="text" id="input" placeholder="ToDo...">
+            <input type="submit" value="Click Me" onclick="todo()">
+            <ul></ul>
+        </form>
+    </header>
+
+</body>
+<script>
+    function todo() {
+        let text = document.querySelector("#input").value;
+        if (text == "") {
+            alert("type something");
+        }
+        else {
+            let li = document.createElement("li");
+            li.innerHTML = text;
+            document.querySelector("ul").appendChild(li);
+        }
+
+    }
+</script>
+
+</html>
