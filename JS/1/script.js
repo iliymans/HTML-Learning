@@ -6,9 +6,9 @@ let profilePicture = false;
 // alert(name + " " + familyName + " " + age + " " + "Profile Picture :" + profilePicture);
 
 let person = {
-    name:"iliya",
-    familyname:"mansouri",
-    age:16,
-    social:"@iliymans"
-}
-alert(person['name']);
+  name: "iliya",
+  familyname: "mansouri",
+  age: 16,
+  social: "@iliymans",
+};
+alert(person["name"]);

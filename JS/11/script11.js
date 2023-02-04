@@ -23,9 +23,9 @@ output = Math.sqrt(25);
 output = Math.abs(num3);
 
 // Min
-output = Math.min(-1,1,2,3,4,5);
+output = Math.min(-1, 1, 2, 3, 4, 5);
 
 // Max
-output = Math.max(-1,2,4,3,5);
+output = Math.max(-1, 2, 4, 3, 5);
 
 console.log(output);
