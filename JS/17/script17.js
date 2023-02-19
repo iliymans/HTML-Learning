@@ -8,4 +8,5 @@ function divMaker() {
   Mydiv.style.padding = prompt("How much is padding?");
   Mydiv.style.textAlign = prompt("What's text align?");
   Mydiv.style.margin = prompt("How much is margin?");
+  Mydiv.style.border = prompt("How much border do you want?")
 }
