@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/aa1c4f9cc9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Login Form</title>
 </head>
@@ -18,11 +19,11 @@
             placeholder="iliymans" class="input">
         <br>
         <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Minimum 8 character" class="input pass"><i
+        <input type="password" id="password" placeholder="Minimum 8 character" class="input"><i
             class="fa-solid fa-eye"></i>
         <br>
-        <input type="submit" value="Login" id="submit">
-        
+        <input type="submit" value="Login" id="submit" onclick="submitBtn()">
+
     </form>
     <div id="mystyle"></div>
 
