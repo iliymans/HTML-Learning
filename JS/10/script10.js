@@ -1,5 +1,5 @@
 // #10:String Method
-let text = "Im Iliya Mansouri";
+let text = "Im Iliya Mansouri from iliymans.com";
 let result;
 
 // length
@@ -28,4 +28,6 @@ result = text.split(" ");
 
 // replace
 result = text.replace("Iliya Mansouri", "iliymans");
+
+
 console.log(result);

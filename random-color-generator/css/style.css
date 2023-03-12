@@ -1,0 +1,67 @@
+/* @iliymans */
+
+/* General Setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  user-select: none;
+}
+
+/* Form Styles */
+form {
+  width: 300px;
+  margin: auto;
+  background-color: #333333ce;
+  margin-top: 200px;
+  padding: 10px;
+  border-radius: 3px;
+}
+form label {
+  color: #fff;
+}
+form input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  height: 7px;
+}
+form input[type="range"]:hover {
+  opacity: 1;
+}
+form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #c3c3c3;
+  cursor: pointer;
+}
+form input[type="range"]::-moz-range-thumb {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #c3c3c3;
+  cursor: pointer;
+}
+form .center {
+  text-align: center;
+}
+form input[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin: auto;
+}
+form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(204, 204, 204);
+}

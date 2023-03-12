@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Instruments Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Music Instruments Store</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Guitars</a></li>
+        <li><a href="#">Drums</a></li>
+        <li><a href="#">Pianos</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Welcome to Our Store</h2>
+      <p>We offer a wide range of musical instruments to suit any taste and budget. Browse our selection below, or use the navigation menu to find what you're looking for:</p>
+
+      <section>
+        <h3>Guitars</h3>
+        <div class="products">
+          <div class="product">
+            <img src="guitar1.jpg" alt="Electric guitar">
+            <h4>Electric Guitar</h4>
+            <p>$400</p>
+            <button onclick="addToCart('Electric Guitar', 400)">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="guitar2.jpg" alt="Acoustic guitar">
+            <h4>Acoustic Guitar</h4>
+            <p>$300</p>
+            <button onclick="addToCart('Acoustic Guitar', 300)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Drums</h3>
+        <div class="products">
+          <div class="product">
+            <img src="drum1.jpg" alt="Drum kit">
+            <h4>Drum Kit</h4>
+            <p>$800</p>
+            <button onclick="addToCart('Drum Kit', 800)">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="drum2.jpg" alt="Cajon">
+            <h4>Cajon</h4>
+            <p>$150</p>
+            <button onclick="addToCart('Cajon', 150)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Pianos</h3>
+        <div class="products">
+          <div class="product">
+            <img src="piano1.jpg" alt="Grand piano">
+            <h4>Grand Piano</h4>
+            <p>$5000</p>
+            <button onclick="addToCart('Grand Piano', 5000)">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="piano2.jpg" alt="Digital piano">
+            <h4>Digital Piano</h4>
+            <p>$1000</p>
+            <button onclick="addToCart('Digital Piano', 1000)">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Music Instruments Store 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
