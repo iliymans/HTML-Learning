@@ -1,8 +1,9 @@
 /* @iliymans */
+
 /* General Setting */
-@import url(/RapFarsi/css/style.css);
+@import url(/rap-farsi/css/style.css);
 body {
-  background-image: url(/RapFarsi/img/zedbazi.jfif);
+  background-image: url(/rap-farsi/img/zedbazi.jfif);
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 300px;

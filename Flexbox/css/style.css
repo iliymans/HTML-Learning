@@ -1,3 +1,6 @@
+/* @iliymans */
+
+/* General Setting */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,8 @@
 body {
   margin: auto;
 }
+
+/* Content */
 section{
   margin: 100px 10px;
 }

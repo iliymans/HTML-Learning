@@ -1,3 +1,6 @@
+/* @iliymans */
+
+/* General Setting */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +9,8 @@
 body {
   direction: rtl;
 }
+
+/* NavBar */
 header {
   width: 100%;
   background-color: #ccc;
@@ -31,6 +36,7 @@ header nav ul li a {
   font-weight: 500;
 }
 
+/* Contant */
 main {
   width: 1100px;
   margin: auto;
@@ -91,6 +97,7 @@ main .two .side{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Footer */
 footer{
     background-color: gray;
     width: 100%;
@@ -112,7 +119,7 @@ footer article{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Responsive */
 @media only screen and (max-width:1100px){
   main{
     width: 100%;

@@ -1,13 +1,16 @@
+/* @iliymans */
+
 @import url(style.css);
 address {
   color: #000000;
   font-size: 18px;
   font-weight: 600;
 }
-.hidden-img {
+.artists-img {
   border-radius: 100%;
+  z-index: -1;
 }
-.hidden-img:hover {
+.artists-img:hover {
   opacity: 0.8;
 }
 .zed-cover {

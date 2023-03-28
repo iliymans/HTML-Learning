@@ -1,3 +1,5 @@
+// @iliymans
+
 let redValue = document.querySelector("#red");
 let greenValue = document.querySelector("#green");
 let blueValue = document.querySelector("#blue");
