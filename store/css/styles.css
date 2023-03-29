@@ -1,0 +1,101 @@
+/* @iliymans */
+
+/* General Setting */
+@import url(/Font/style.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: IRANSans-web;
+}
+body {
+  direction: rtl;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 400px;
+  background-color: yellowgreen;
+  padding: 50px 150px;
+}
+header .right-header {
+  width: 50%;
+  float: right;
+}
+header .right-header h1 {
+  font-family: IRANSans-web-Bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+header .right-header p {
+  text-align: justify;
+  font-family: IRANSans-web;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+header .right-header button {
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: rgb(49, 71, 5);
+  color: white;
+}
+header .left-header {
+  float: left;
+  height: 400px;
+}
+header .left-header img {
+  width: 500px;
+  position: relative;
+  bottom: 100px;
+}
+
+/* Content */
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .product {
+  width: 22%;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid #dfdfdf;
+  padding: 10px;
+}
+main .product img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+main .product h5 {
+  font-family: IRANSans-web-Light;
+  margin-bottom: 10px;
+}
+main .product p {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: red;
+}
+main .product span {
+  font-family: IRANSans-web-Bold;
+  float: left;
+}
+
+/* Footer */
+footer{
+  margin-top: 50px;
+}
+footer p{
+  background-color: #333;
+  text-align: center;
+  color:  white;
+  padding: 10px 0px;
+}

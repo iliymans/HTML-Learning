@@ -1,10 +1,12 @@
 /* @iliymans */
 
 /* General Setting */
+@import url(/Font/style.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: IRANSans-web;
 }
 body {
   direction: rtl;
@@ -31,7 +33,6 @@ header nav ul li a {
   margin: 8px 10px;
   color: black;
   font-size: 16px;
-  font-family: iransans;
   text-decoration: none;
   font-weight: 500;
 }
@@ -41,8 +42,8 @@ main {
   width: 1100px;
   margin: auto;
 }
-section{
-    margin-bottom: 20px;
+section {
+  margin-bottom: 20px;
 }
 main .one {
   display: flex;
@@ -76,61 +77,61 @@ main .two {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-main .two .content{
-    background-color: red;
-    border-radius: 8px;
-    width: 68%;
-    flex-basis: 100%;
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+main .two .content {
+  background-color: red;
+  border-radius: 8px;
+  width: 68%;
+  flex-basis: 100%;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-main .two .side{
-    border-radius: 8px;
-    width: 30%;
-    flex-basis: 30%;
-    background-color: green;
-    color: white;
-    padding: 15px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+main .two .side {
+  border-radius: 8px;
+  width: 30%;
+  flex-basis: 30%;
+  background-color: green;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Footer */
-footer{
-    background-color: gray;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 50px;
+footer {
+  background-color: gray;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
 }
-footer article{
-    flex-basis: 25%;
-    margin: 5px;
-    height: 40px;
-    background-color: #333;
-    border-radius: 5px;
-    color: white;
-    text-align: right;
-    padding: 15px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+footer article {
+  flex-basis: 25%;
+  margin: 5px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 5px;
+  color: white;
+  text-align: right;
+  padding: 15px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Responsive */
-@media only screen and (max-width:1100px){
-  main{
+@media only screen and (max-width: 1100px) {
+  main {
     width: 100%;
   }
-  main .one{
+  main .one {
     flex-direction: column;
   }
-  footer{
+  footer {
     flex-direction: column;
   }
-  footer article{
+  footer article {
     width: 90%;
   }
 }
