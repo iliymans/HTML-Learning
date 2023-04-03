@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: IRANSans-web;
+  user-select: none;
 }
 body {
   direction: rtl;
@@ -18,10 +19,11 @@ header {
   height: 400px;
   background-color: yellowgreen;
   padding: 50px 150px;
+  display: flex;
+  margin: 0 0 50px 0;
 }
 header .right-header {
-  width: 50%;
-  float: right;
+  align-self: center;
 }
 header .right-header h1 {
   font-family: IRANSans-web-Bold;
@@ -34,6 +36,8 @@ header .right-header p {
   font-family: IRANSans-web;
   font-size: 14px;
   margin-bottom: 15px;
+  color: #333;
+  line-height: 21px;
 }
 header .right-header button {
   cursor: pointer;
@@ -45,12 +49,10 @@ header .right-header button {
   background-color: rgb(49, 71, 5);
   color: white;
 }
-header .left-header {
-  float: left;
-  height: 400px;
+header .right-header button:hover {
+  opacity: 0.9;
 }
 header .left-header img {
-  width: 500px;
   position: relative;
   bottom: 100px;
 }
@@ -63,21 +65,26 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0 150px;
 }
 main .product {
-  width: 22%;
+  width: 25%;
   border-radius: 5px;
-  margin: 5px;
   border: 1px solid #dfdfdf;
   padding: 10px;
 }
-main .product img {
-  width: 100%;
+main .product .img {
+  text-align: center;
+}
+main .product .img img {
+  width: 240px;
+  height: 240px;
   margin-bottom: 10px;
 }
 main .product h5 {
   font-family: IRANSans-web-Light;
   margin-bottom: 10px;
+  height: 40px;
 }
 main .product p {
   font-size: 12px;
@@ -88,14 +95,17 @@ main .product span {
   font-family: IRANSans-web-Bold;
   float: left;
 }
+main .product i {
+  cursor: pointer;
+}
 
 /* Footer */
-footer{
+footer {
   margin-top: 50px;
 }
-footer p{
+footer p {
   background-color: #333;
   text-align: center;
-  color:  white;
+  color: yellowgreen;
   padding: 10px 0px;
 }
