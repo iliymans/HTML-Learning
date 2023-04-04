@@ -15,23 +15,29 @@ body {
 
 /* Header */
 header {
-  width: 100%;
   height: 400px;
-  background-color: yellowgreen;
-  padding: 50px 150px;
+  background-color: #9acd32;
+  margin-bottom: 50px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .container .header-section {
   display: flex;
-  margin: 0 0 50px 0;
+  justify-content: space-around;
 }
-header .right-header {
+header .container .right-header {
   align-self: center;
+  flex-basis: 50%;
 }
-header .right-header h1 {
+header .container .header-section .right-header h1 {
   font-family: IRANSans-web-Bold;
   line-height: 1.2;
   margin-bottom: 20px;
   font-size: 26px;
 }
-header .right-header p {
+header .container .header-section .right-header p {
   text-align: justify;
   font-family: IRANSans-web;
   font-size: 14px;
@@ -39,7 +45,7 @@ header .right-header p {
   color: #333;
   line-height: 21px;
 }
-header .right-header button {
+header .container .header-section .right-header button {
   cursor: pointer;
   padding: 8px 15px;
   font-size: 12px;
@@ -49,36 +55,28 @@ header .right-header button {
   background-color: rgb(49, 71, 5);
   color: white;
 }
-header .right-header button:hover {
+header .container .header-section .right-header button:hover {
   opacity: 0.9;
 }
-header .left-header img {
-  position: relative;
-  bottom: 100px;
+header .container .header-section .left-header img {
+  align-self: center;
+  width: 500px;
+  padding-top: 5px;
 }
 
 /* Content */
 main {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 150px;
 }
 main .product {
-  width: 25%;
-  border-radius: 5px;
+  flex-basis: 25%;
   border: 1px solid #dfdfdf;
   padding: 10px;
 }
-main .product .img {
-  text-align: center;
-}
-main .product .img img {
-  width: 240px;
-  height: 240px;
+
+main .product img {
+  width: 100%;
   margin-bottom: 10px;
 }
 main .product h5 {
