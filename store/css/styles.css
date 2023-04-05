@@ -17,7 +17,8 @@ body {
 header {
   height: 400px;
   background-color: #9acd32;
-  margin-bottom: 50px;
+  padding: 10px;
+  /* margin-bottom: 50px; */
 }
 .container {
   width: 1200px;
@@ -35,7 +36,7 @@ header .container .header-section .right-header h1 {
   font-family: IRANSans-web-Bold;
   line-height: 1.2;
   margin-bottom: 20px;
-  font-size: 26px;
+  /* font-size: 26px; */
 }
 header .container .header-section .right-header p {
   text-align: justify;
@@ -58,21 +59,26 @@ header .container .header-section .right-header button {
 header .container .header-section .right-header button:hover {
   opacity: 0.9;
 }
-header .container .header-section .left-header img {
+header .container .header-section .left-header {
+  flex-basis: 40%;
   align-self: center;
+}
+header .container .header-section .left-header img {
   width: 500px;
-  padding-top: 5px;
+  /* padding-top: 5px; */
 }
 
 /* Content */
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 main .product {
-  flex-basis: 25%;
+  flex-basis: 300px;
   border: 1px solid #dfdfdf;
   padding: 10px;
+  margin: 5px;
 }
 
 main .product img {
@@ -97,6 +103,52 @@ main .product i {
   cursor: pointer;
 }
 
+/* Cart */
+.cart {
+  background-color: #d8d8d8;
+  width: 250px;
+  height: 300px;
+  position: fixed;
+  left: 20px;
+  bottom: 0;
+  border-radius: 5px;
+}
+.cart .cart-header {
+  background-color: #008000;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 16px;
+  font-family: IRANSans-web-Medium;
+}
+.cart .cart-items {
+  height: 200px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+  padding: 5px 5px;
+}
+.cart .cart-items .cart-item {
+  font-size: 14px;
+  font-family: IRANSans-web-light;
+  display: flex;
+  justify-content: space-between;
+}
+.cart .cart-items .cart-item i {
+  cursor: pointer;
+}
+.cart .cart-items .cart-item .p-name:hover{
+  background-color: red;
+}
+.cart .total {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  font-size: 14px;
+  font-family: IRANSans-web-Medium;
+}
+
 /* Footer */
 footer {
   margin-top: 50px;
@@ -106,4 +158,55 @@ footer p {
   text-align: center;
   color: yellowgreen;
   padding: 10px 0px;
+  font-family: IRANSans-web-Light;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  header .container .header-section {
+    justify-content: center;
+  }
+  header .container .header-section .left-header img {
+    width: 100%;
+  }
+  header .container .right-header {
+    flex-basis: 40%;
+  }
+  header {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 30px;
+  }
+  main {
+    padding: 30px;
+  }
+  header .container .header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .container .right-header {
+    width: 100%;
+    flex-basis: 0;
+  }
+  header .container .left-header {
+    width: 100%;
+    flex-basis: 0;
+  }
+  main .product {
+    flex-basis: 250px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  main .product {
+    flex-basis: 350px;
+  }
+  header .container .header-section .left-header img {
+    margin-top: 10px;
+  }
 }
