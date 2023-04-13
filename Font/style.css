@@ -1,90 +1,51 @@
-@charset "utf-8";
-
 @font-face {
-  font-family: "IRANSans-web-Bold";
+  font-family: "IRANSansBold";
   src: url("IRANSans-Bold-web.eot");
-
-  src: url("IRANSans-Bold-web.eot?#iefix") format("eot"),
-    /* IE6–8 */ url("IRANSans-Bold-web.woff2") format("woff2"),
-    /* Chrome36+, Opera24+*/ url("IRANSans-Bold-web.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("IRANSans-Bold-web.ttf")
-      format("ttf");
-  font-weight: bold;
+  src: url("IRANSans-Bold-web.eot?#iefix") format("embedded-opentype"),
+    url("IRANSans-Bold-web.woff2") format("woff2");
+  src: url("IRANSans-Bold-web.ttf") format("truetype"),
+    url("IRANSans-Bold-web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: "IRANSans-web-Medium";
+  font-family: "IRANSansMedium";
   src: url("IRANSans-Medium-web.eot");
-
-  src: url("IRANSans-Medium-web.eot?#iefix") format("eot"),
-    /* IE6–8 */ url("IRANSans-Medium-web.woff2") format("woff2"),
-    /* Chrome36+, Opera24+*/ url("IRANSans-Medium-web.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("IRANSans-Medium-web.ttf")
-      format("ttf");
-  font-weight: 500;
+  src: url("IRANSans-Medium-web.eot?#iefix") format("embedded-opentype"),
+    url("IRANSans-Medium-web.woff2") format("woff2");
+  src: url("IRANSans-Medium-web.ttf") format("truetype"),
+    url("IRANSans-Medium-web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: "IRANSans-web-UltraLight";
-  src: url("IRANSans-UltraLight-web.eot");
-
-  src: url("IRANSans-UltraLight-web.eot?#iefix") format("eot"),
-    /* IE6–8 */ url("IRANSans-UltraLight-web.woff2") format("woff2"),
-    /* Chrome36+, Opera24+*/ url("IRANSans-UltraLight-web.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("IRANSans-UltraLight-web.ttf")
-      format("ttf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "IRANSans-web-Light";
+  font-family: "IRANSansLight";
   src: url("IRANSans-Light-web.eot");
-
-  src: url("IRANSans-Light-web.eot?#iefix") format("eot"),
-    /* IE6–8 */ url("IRANSans-Light-web.woff2") format("woff2"),
-    /* Chrome36+, Opera24+*/ url("IRANSans-Light-web.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("IRANSans-Light-web.ttf")
-      format("ttf");
-  font-weight: 300;
+  src: url("IRANSans-Light-web.eot?#iefix") format("embedded-opentype"),
+    url("IRANSans-Light-web.woff2") format("woff2");
+  src: url("IRANSans-Light-web.ttf") format("truetype"),
+    url("IRANSans-Light-web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-
 @font-face {
-  font-family: "IRANSans-web";
+  font-family: "IRANSansUltraLight";
+  src: url("IRANSans-UltraLight-web.eot");
+  src: url("IRANSans-UltraLight-web.eot?#iefix") format("embedded-opentype"),
+    url("IRANSans-UltraLight-web.woff2") format("woff2");
+  src: url("IRANSans-UltraLight-web.ttf") format("truetype"),
+    url("IRANSans-UltraLight-web.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IRANSans";
   src: url("IRANSans-web.eot");
-
-  src: url("IRANSans-web.eot?#iefix") format("eot"),
-    /* IE6–8 */ url("IRANSans-web.woff2") format("woff2"),
-    /* Chrome36+, Opera24+*/ url("IRANSans-web.woff") format("woff"),
-    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("IRANSans-web.ttf") format("ttf");
+  src: url("IRANSans-web.eot?#iefix") format("embedded-opentype"),
+    url("IRANSans-web.woff2") format("woff2");
+  src: url("IRANSans-web.ttf") format("ttf"),
+    url("IRANSans-web.woff") format("woff");
   font-weight: normal;
+  font-style: normal;
 }
 
-.IRANSansBold {
-  font-family: IRANSans-web;
-  color: #000;
-  font-weight: bold;
-}
-
-.IRANSansMedium {
-  font-family: IRANSans-web;
-  color: #000;
-  font-weight: 500;
-}
-
-.IRANSansUltraLight {
-  font-family: IRANSans-web;
-  color: #000;
-  font-weight: 200;
-}
-
-.IRANSansLight {
-  font-family: IRANSans-web;
-  color: #000;
-  font-weight: 300;
-}
-
-.IRANSans {
-  font-family: IRANSans-web;
-  color: #000;
-  font-weight: normal;
-}

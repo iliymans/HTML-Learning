@@ -1,12 +1,12 @@
 /* @iliymans */
 
 /* General Setting */
-@import url(/font/style.css);
+/* @import url(/font/style.css); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: IRANSans-web;
+  font-family: IRANSans;
   user-select: none;
 }
 body {
@@ -33,14 +33,14 @@ header .container .right-header {
   flex-basis: 50%;
 }
 header .container .header-section .right-header h1 {
-  font-family: IRANSans-web-Bold;
+  font-family: IRANSansBold;
   line-height: 1.2;
   margin-bottom: 20px;
   /* font-size: 26px; */
 }
 header .container .header-section .right-header p {
   text-align: justify;
-  font-family: IRANSans-web;
+  font-family: IRANSans;
   font-size: 14px;
   margin-bottom: 15px;
   color: #3C486B;
@@ -55,7 +55,7 @@ header .container .header-section .right-header button {
   border: none;
   background-color: #3C486B;
   color: #F45050;
-  font-family: IRANSans-web-Bold;
+  font-family: IRANSansBold;
 }
 header .container .header-section .right-header button:hover {
   opacity: 0.9;
@@ -87,7 +87,7 @@ main .product img {
   margin-bottom: 10px;
 }
 main .product h5 {
-  font-family: IRANSans-web-Light;
+  font-family: IRANSansLight;
   margin-bottom: 10px;
   height: 40px;
   color: #3C486B;
@@ -96,10 +96,10 @@ main .product p {
   font-size: 12px;
   margin-bottom: 15px;
   color: #F45050;
-  font-family: IRANSans-web-Medium;
+  font-family: IRANSansMedium;
 }
 main .product span {
-  font-family: IRANSans-web-Bold;
+  font-family: IRANSansBold;
   float: left;
   color: #3C486B;
 }
@@ -125,7 +125,7 @@ main .product i {
   text-align: center;
   padding: 5px 0;
   font-size: 16px;
-  font-family: IRANSans-web-Medium;
+  font-family: IRANSansMedium;
   cursor: pointer;
 }
 .cart .cart-items {
@@ -137,7 +137,7 @@ main .product i {
 .cart .cart-items .cart-item {
   /* height: 25px; */
   font-size: 12px;
-  font-family: IRANSans-web-light;
+  font-family: IRANSanslight;
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
@@ -160,7 +160,7 @@ main .product i {
   position: relative;
   top: 20px;
   font-size: 14px;
-  font-family: IRANSans-web-Medium;
+  font-family: IRANSansMedium;
 }
 
 /* Footer */
@@ -172,7 +172,7 @@ footer p {
   text-align: center;
   color: #3C486B;
   padding: 10px 0px;
-  font-family: IRANSans-web-Medium;
+  font-family: IRANSansMedium;
 }
 
 /* Responsive */
