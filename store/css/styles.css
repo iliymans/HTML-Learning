@@ -16,9 +16,9 @@ body {
 /* Header */
 header {
   height: 400px;
-  background-color: #9acd32;
+  background-color: #F9D949;
   padding: 10px;
-  /* margin-bottom: 50px; */
+  margin-bottom: 50px;
 }
 .container {
   width: 1200px;
@@ -43,18 +43,19 @@ header .container .header-section .right-header p {
   font-family: IRANSans-web;
   font-size: 14px;
   margin-bottom: 15px;
-  color: #333;
+  color: #3C486B;
   line-height: 21px;
 }
 header .container .header-section .right-header button {
   cursor: pointer;
   padding: 8px 15px;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 4px;
   outline: none;
   border: none;
-  background-color: rgb(49, 71, 5);
-  color: white;
+  background-color: #3C486B;
+  color: #F45050;
+  font-family: IRANSans-web-Bold;
 }
 header .container .header-section .right-header button:hover {
   opacity: 0.9;
@@ -89,15 +90,18 @@ main .product h5 {
   font-family: IRANSans-web-Light;
   margin-bottom: 10px;
   height: 40px;
+  color: #3C486B;
 }
 main .product p {
   font-size: 12px;
   margin-bottom: 15px;
-  color: red;
+  color: #F45050;
+  font-family: IRANSans-web-Medium;
 }
 main .product span {
   font-family: IRANSans-web-Bold;
   float: left;
+  color: #3C486B;
 }
 main .product i {
   cursor: pointer;
@@ -114,8 +118,8 @@ main .product i {
   border-radius: 5px;
 }
 .cart .cart-header {
-  background-color: #008000;
-  color: white;
+  background-color: #3C486B;
+  color: #F45050;
   border-radius: 5px 5px 0 0;
   border-bottom: none;
   text-align: center;
@@ -164,11 +168,11 @@ footer {
   margin-top: 50px;
 }
 footer p {
-  background-color: #333;
+  background-color: #F9D949;
   text-align: center;
-  color: yellowgreen;
+  color: #3C486B;
   padding: 10px 0px;
-  font-family: IRANSans-web-Light;
+  font-family: IRANSans-web-Medium;
 }
 
 /* Responsive */

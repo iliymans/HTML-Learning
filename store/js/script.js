@@ -1,3 +1,4 @@
+// @iliymans
 let productContainer = document.querySelector("#products");
 function showAllProducts() {
   for (let i = 0; i < products.length; i++) {
@@ -7,8 +8,10 @@ function showAllProducts() {
         alt="${products[i].name}">
         <h5>${products[i].name}</h5>
         <p>تعداد موجودی : ${products[i].inStock}</p>
-        <span>${products[i].price}</span>
-        <i class="fa-solid fa-cart-plus fa-lg" title="اضافه کردن به سبد خرید" onclick="addToCart(${products[i].id})"></i>
+        <span>${commafy(products[i].price)}</span>
+        <i class="fa-solid fa-cart-plus fa-lg" style="color: #3C486B;" title="اضافه کردن به سبد خرید" onclick="addToCart(${
+          products[i].id
+        })"></i>
     </div>
     `;
   }
@@ -32,7 +35,7 @@ let cart = [];
 // Add to cart array funcion
 function addToCart(id) {
   let itemId = cart.some(function (item) {
-    return (item.id == id);
+    return item.id == id;
   });
 
   if (itemId) {
@@ -46,6 +49,7 @@ function addToCart(id) {
   }
 
   renderCartItem();
+  renderTotal();
 }
 
 // Add to cart function
@@ -55,8 +59,8 @@ function renderCartItem() {
   for (let i = 0; i < cart.length; i++) {
     cartItems.innerHTML += `
     <li class="cart-item">
-      <div class="p-name" title="حذف محصول">${cart[i].name}</div>
-      <div class="p-price">${cart[i].price}</div>
+      <div class="p-name" onclick="deleteFromCart(${cart[i].id})" title="حذف محصول">${cart[i].name}</div>
+      <div class="p-price" style="color: #3C486B;">${commafy(cart[i].price)}</div>
       <div class="p-unit">
           <span class="plus"><i onclick="changeNumbersOfUnits('plus' , '${cart[i].id}')" class="fa-solid fa-square-plus fa-lg" style="color: #008000;"></i></span>
           <span class="unit">${cart[i].numberOfUnit}</span>
@@ -67,6 +71,7 @@ function renderCartItem() {
       <hr>
     `;
   }
+  renderTotal();
 }
 
 // Change number of unit
@@ -84,4 +89,38 @@ function changeNumbersOfUnits(action, id) {
     return item;
   });
   renderCartItem();
+  renderTotal();
+}
+
+// Rnder total
+function renderTotal() {
+  let total = document.querySelector(".total");
+  let totalPrice = 0;
+  let totalItems = 0;
+  for (let i = 0; i < cart.length; i++) {
+    totalItems += cart[i].numberOfUnit;
+    totalPrice += cart[i].price * cart[i].numberOfUnit;
+  }
+
+  total.innerHTML = `تعداد: ${totalItems} - قیمت: ${commafy(totalPrice)}`;
+}
+
+// Delete from cart
+function deleteFromCart(id) {
+  cart = cart.filter(function (item) {
+    return item.id != id;
+  });
+  renderCartItem();
+}
+
+// Separate Number
+function commafy(num) {
+  var str = num.toString().split(".");
+  if (str[0].length >= 5) {
+    str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, "$1,");
+  }
+  if (str[1] && str[1].length >= 5) {
+    str[1] = str[1].replace(/(\d{3})/g, "$1 ");
+  }
+  return str.join(".");
 }
