@@ -24,7 +24,11 @@ let cartContent = document.querySelector(".cart");
 cartHeader.addEventListener("click", function () {
   if (cartContent.style.height == "300px") {
     cartContent.style.height = "37px";
-  } else {
+  } else if(cartContent.style.width == "120px"){
+    cartContent.style.width = "300px";
+  }else if(cartContent.style.width == "300px"){
+    cartContent.style.width = "120px";
+  }else if((cartContent.style.height == "37px")||(cartContent.style.height == "47px")) {
     cartContent.style.height = "300px";
   }
 });

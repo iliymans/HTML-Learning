@@ -193,6 +193,11 @@ footer p {
     height: auto;
   }
 }
+@media only screen and (max-width: 1000px){
+  .cart{
+    width: 120px;
+  }
+}
 @media only screen and (max-width: 700px) {
   header {
     padding: 30px;
@@ -222,5 +227,13 @@ footer p {
   }
   header .container .header-section .left-header img {
     margin-top: 10px;
+  }
+  .cart{
+    width: 100%;
+    left: 0;
+    height: 47px;
+  }
+  .cart .cart-header{
+    padding: 10px 0;
   }
 }
